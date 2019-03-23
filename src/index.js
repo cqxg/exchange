@@ -2,11 +2,11 @@ module.exports = function makeExchange(currency) {
 	var obj = {};
 	if(currency > 0 && currency < 10000){
 		var temp = [];
-		var amount50 = 0;
-		var amount25 = 0;
-		var amount10 = 0;
-		var amount5 = 0;
 		var amount1 = 0;
+		var amount5 = 0;
+        var amount10 = 0;
+		var amount25 = 0;
+		var amount50 = 0;
 		amount50  = Math.floor(currency / 50);
 		currency = currency - amount50 * 50;
 		amount25 = Math.floor(currency / 25);
